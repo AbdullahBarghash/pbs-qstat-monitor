@@ -21,6 +21,12 @@ single command-line report.
   - Allocated nodes
   - Queue distribution (thin, fat, A100, H100)
 
+- Notes
+-Queue names (thin, fat, A100, H100) are environment-specific and can be
+-adapted to match local scheduler configurations.
+-Script contains no hardcoded cluster-specific or sensitive information.
+-Intended for operational monitoring, not accounting or billing.
+
 ---
 
 ## Sample Output
