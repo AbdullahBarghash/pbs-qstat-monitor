@@ -20,12 +20,17 @@ single command-line report.
   - Allocated CPUs
   - Allocated nodes
   - Queue distribution (thin, fat, A100, H100)
+- Advanced resource usage reporting:
+  - Per-user and per-group resource allocation
+  - Queue-level CPU usage summary
+  - Formatted tabular output for easy analysis
 
-- Notes
--Queue names (thin, fat, A100, H100) are environment-specific and can be
--adapted to match local scheduler configurations.
--Script contains no hardcoded cluster-specific or sensitive information.
--Intended for operational monitoring, not accounting or billing.
+## Notes
+
+- Queue names (thin, fat, A100, H100) are environment-specific and can be adapted to match local scheduler configurations
+- Script contains no hardcoded cluster-specific or sensitive information
+- Intended for operational monitoring, not accounting or billing
+- Requires `qstat -fx` output parsing for enhanced group and queue summaries
 
 ---
 
